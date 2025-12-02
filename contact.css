@@ -1,0 +1,114 @@
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(270deg, var(--banner-grad-1), var(--banner-grad-2));
+    padding: 60px 20px;
+    width: 100%;
+    /* max-width: 700px; */
+    margin: auto;
+}
+
+/* Section Title (Optional if you add h2) */
+.contact-section h2 {
+    font-size: 2rem;
+    color: #764ba2;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s forwards;
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Inputs and Textarea */
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 8px rgba(118, 75, 162, 0.8);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Submit Button */
+.submit-btn {
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: rgba(255, 255, 255, 0.45);
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #contact-form {
+        padding: 20px;
+    }
+}

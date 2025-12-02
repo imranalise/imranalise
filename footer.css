@@ -1,0 +1,68 @@
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    height: 40px;
+    /* Fixed height */
+    line-height: 40px;
+    /* Center text vertically */
+    padding: 0 20px;
+    /* Horizontal padding */
+    color: white;
+    position: sticky;
+    /* Sticky at bottom */
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    /* Start hidden for fade-in */
+    z-index: 10;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Vertically center content */
+}
+
+.footer-logo img {
+    height: 30px;
+    /* Fit inside 40px footer */
+    width: auto;
+
+}
+
+.footer-socials a {
+    margin-left: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-socials a img {
+    height: 24px;
+    /* Fit inside 40px footer */
+    width: 24px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+/* Hover Effects for Social Icons */
+.footer-socials a:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,86 @@
+/* About Us Section */
+.about-section {
+    /* padding: 60px 20px; */
+    /* max-width: 1000px; */
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(135deg, var(--banner-grad-1), var(--banner-grad-2));
+    
+}
+
+.about-section h2 {
+    padding: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #764ba2;
+    text-align: center;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-section p {
+    font-size: 1.3rem;
+        padding: 10px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    opacity: 0;
+        text-align: center;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Team Grid */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px 0;
+}
+
+.team-member p {
+    color: #666;
+}
+
+/* Hover Effects for Team Members */
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 255, 123, 0.265);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

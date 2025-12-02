@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMRAN ALI SE | Contact US</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="banner.css">
+    <link rel="shortcut icon" href="favico.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">IMRAN ALI <span style="color:red;">SE</span></div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Theme + Menu -->
+        <div class="header-controls">
+            <button id="themeToggle" class="theme-btn">🌙</button>
+            <button id="menuToggle" class="menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+        <!-- Mobile Theme Button (Visible only on mobile) -->
+        <button id="mobileTheme" class="theme-btn mobile-theme">🌙</button>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="#">Contact</a>
+
+        <button id="closeSidebar" class="close-btn">✕</button>
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+
+    <!-- banner.html -->
+    <section class="banner" aria-label="Hero banner">
+        <div class="banner-card">
+            <div class="banner-content">
+                <h1 class="banner-title">Welcome to Our Website</h1>
+                <p class="banner-sub">
+                    Discover cutting-edge apps and software, designed and developed by Imran Ali SE. Innovation starts
+                    here – explore,
+                    experience, and enjoy!
+                </p>
+                <div class="banner-ctas">
+                    <a href="#" class="btn primary" id="getStarted">Get Started</a>
+                    <a href="#" class="btn ghost">Learn More</a>
+                </div>
+            </div>
+
+            <div class="banner-visual" role="img" aria-label="Illustration">
+                <!-- Replace the src with your generated image path (e.g. images/banner.png) -->
+                <img src="banner.png" alt="Illustrated woman presenting" />
+            </div>
+        </div>
+    </section>
+    <section class="contact-section">
+        <h1 style="text-align: center; margin-bottom: 10px;">Contact US</h1>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    
+    <!-- Add EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("ABI_PsT2zF5VJRVF0"); // Replace with your EmailJS public key
+    </script>
+
+    </section >
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="footer-logo" style="font-size: 25px; font-weight: bolder;">
+                IMRAN ALI <span style="color: red; font-size: 25px;">SE</span>
+            </div>
+    
+            <!-- Social Icons -->
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/imranali164490/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                <a href="https://x.com/imranalise192" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/imranali_203/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/@mi.islamic.tv01" target="_blank"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/YouTube_play_button_square_%282013-2017%29.svg/2048px-YouTube_play_button_square_%282013-2017%29.svg.png"
+                        alt="Youtube"></a>
+            </div>
+        </div>
+    </footer>
+
+        <script src="script.js"></script>
+        <script src="banner.js"></script>
+        <script src="app.js"></script>
+        <script src="contact.js"></script>
+    </body>
+    </html>
