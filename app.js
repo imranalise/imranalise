@@ -7,10 +7,10 @@ const apps = [
         download: "https://drive.google.com/file/d/1u7LoWE8NgfY5TBFwtn9oqvpNk_MP7Wwz/view?usp=drive_link"
     },
     {
-        name: "Notes App",
-        description: "Take Notes Easily",
-        icon: "https://cdn-icons-png.flaticon.com/512/1828/1828919.png",
-        download: "https://drive.google.com/file/d/ANOTHER_LINK/view?usp=drive_link"
+        name: "Holly Wood Game",
+        description: "Games For Professional",
+        icon: "https://play-lh.googleusercontent.com/CkUridDBfs3puN320WB43fazQc87ycb3DdUo2b-gLPaxImugesQf3TVCOj1XGwd8Kg",
+        download: "https://drive.google.com/file/d/1llOY5-7oHt-RE3ryKQ1gmdIypheXOmzs/view?usp=drive_link"
     },
     {
         name: "Weather App",
@@ -40,3 +40,4 @@ apps.forEach(app => {
     `;
     appsGrid.appendChild(card);
 });
+
